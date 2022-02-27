@@ -6,13 +6,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
+  apiKey: "AIzaSyDGd23vWdJ7rY1Dm-MOXNEa2T6-niVjnFg",
+  authDomain: "lenguaviva-d1346.firebaseapp.com",
+  databaseURL: "https://lenguaviva-d1346-default-rtdb.firebaseio.com",
+  projectId: "lenguaviva-d1346",
+  storageBucket: "lenguaviva-d1346.appspot.com",
+  messagingSenderId: "216627910605",
+  appId: "1:216627910605:web:22758f9180b25e73231684",
 };
 
 // Initialize Firebase
