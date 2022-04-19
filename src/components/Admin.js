@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
+import ListData from "./ListData";
 
-export function Home() {
+export function Admin() {
   const { user, logout, loading } = useAuth();
   /* console.log(user); */
 
@@ -17,10 +18,11 @@ export function Home() {
 
   return (
     <>
-      <div>home</div>
-      <br></br>
-      <h1>Hola {user.displayName || user.email}</h1>
-      <button onClick={handleLogout}>Logout</button>
+      <div className="admin">
+        <h1>Hola {user.displayName || user.email}</h1>
+        <button onClick={handleLogout}>Logout</button>
+      </div>
+      <ListData></ListData>
     </>
   );
 }

@@ -1,0 +1,60 @@
+.head6 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 15px;
+  background-color: var(--cielo);
+}
+
+.head6-title {
+  position: relative;
+  top: -20px;
+  left: calc(50% - 130px);
+  width: 260px;
+}
+.head6-title h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--tiza);
+  font-family: "HelveBlk";
+}
+.head6-title span {
+  margin: 0;
+  background-color: var(--negris);
+}
+.head6-title h3 {
+  font-family: "HelveThEx";
+  color: var(--tiza);
+  font-size: 26px;
+  margin: 0;
+  margin-left: 11px;
+}
+.cv {
+  width: 100%;
+}
+
+.cv p {
+  margin: 60px 20px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+  .cuentero {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    left: 10%;
+    justify-content: space-between;
+  }
+
+  .head6 {
+    width: 47%;
+    min-height: 37vw;
+  }
+
+  .cv {
+    width: 47%;
+  }
+}

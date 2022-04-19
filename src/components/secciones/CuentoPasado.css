@@ -1,0 +1,51 @@
+.cuentoPasado-container {
+  position: relative;
+  top: 20px;
+  width: calc(100% - 40px);
+  margin: 20px 20px 0 20px;
+  background-color: var(--tiza);
+  padding-bottom: 20px;
+}
+.cuentoPasado-imagen {
+  position: relative;
+  width: 100%;
+  height: calc(100vw - 40px);
+}
+.flyer {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.flechas {
+  position: relative;
+  height: 40px;
+  top: -60px;
+  left: 75%;
+}
+.descripcion {
+  margin: 20px 20px 0 20px;
+}
+
+.cuentoPasado-container {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .cuentoPasado-container {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    margin: 0;
+  }
+
+  .flechas {
+    position: absolute;
+    top: 80%;
+  }
+
+  .cuentoPasado-imagen {
+    display: flex;
+    height: auto;
+  }
+}

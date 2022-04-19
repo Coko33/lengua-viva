@@ -1,0 +1,145 @@
+.fade-in-fwd {
+  -webkit-animation: fade 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.fade-in-fwd-inicio {
+  -webkit-animation: fade-inicio 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-inicio 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-inicio {
+  0% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fade-inicio {
+  0% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.aparece {
+  -webkit-animation: aparece 0.6s ease-in-out both;
+  animation: aparece 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes aparece {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(131, 101, 101, 0.705);
+  }
+}
+@keyframes aparece {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(131, 101, 101, 0.705);
+  }
+}
+.desaparece {
+  -webkit-animation: desaparece 0.6s ease-in-out both;
+  animation: desaparece 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes desaparece {
+  0% {
+    background-color: rgba(131, 101, 101, 0.705);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes desaparece {
+  0% {
+    background-color: rgba(131, 101, 101, 0.705);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.caer {
+  -webkit-animation: caer 0.6s ease-in-out both;
+  animation: caer 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes caer {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes caer {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.subir {
+  -webkit-animation: subir 0.6s ease-in-out both;
+  animation: subir 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes subir {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes subir {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

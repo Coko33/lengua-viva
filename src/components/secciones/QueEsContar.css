@@ -1,0 +1,404 @@
+/*head1*/
+.head1 {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  margin-bottom: 76px;
+}
+
+.head1.head2 {
+  margin-bottom: 62%;
+}
+
+.head1-fondoGris {
+  display: none;
+}
+
+.head2-fondoGris {
+  position: absolute;
+  display: block;
+  z-index: 200;
+  width: calc(80% - 40px);
+  left: 10%;
+  top: 90%;
+  background-color: var(--cielo);
+  padding: 20px;
+}
+
+.fondogris-txt {
+  color: var(--tiza);
+  margin: 0;
+  font-family: "HelveBlk";
+  font-size: 24px;
+  line-height: 22px;
+  color: var(--tiza);
+}
+
+.head1-title {
+  position: absolute;
+  width: fit-content;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.head1-title h1 {
+  font-family: "HelveBlkEx";
+  font-size: 28px;
+  color: var(--tiza);
+  margin: 0;
+}
+
+.head1-title span {
+  background-color: var(--naranja);
+  line-height: 37px;
+  padding: 0px 14px 0px 10px;
+  margin: 0;
+}
+
+.head1-image {
+  position: relative;
+  top: 80px;
+  width: 100%;
+}
+.head2-image {
+  top: 0;
+}
+
+.head1-image img {
+  width: 100%;
+  transform: scale(-1, 1);
+}
+
+.head1-articulito {
+  display: none;
+}
+
+/*body1*/
+.body1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.articulo {
+  margin: 20px;
+  border: 1px solid var(--negris);
+  padding: 30px;
+  width: auto;
+  height: auto;
+}
+
+.articulo.dos {
+  margin-top: 0;
+}
+
+.articulo-title h3 {
+  font-family: "HelveBlk";
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--negris);
+  margin: 0;
+}
+
+.articulo-title span {
+  display: inline-block;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 5px;
+  line-height: 25px;
+  padding-bottom: 0;
+  background-color: var(--cielo);
+  color: var(--negris);
+}
+
+#span2 {
+  padding-bottom: 1px;
+  padding-right: 12px;
+}
+
+.articulo-body {
+  margin-top: 20px;
+}
+
+.articulo-txt {
+  display: inline;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+}
+
+.articulo-leermas {
+  display: inline;
+  font-family: "HelveBlk";
+  margin-left: 5px;
+  font-size: 14px;
+  color: var(--naranja);
+  white-space: nowrap;
+}
+
+/*body 2*/
+
+@media (min-width: 600px) {
+  .head1 {
+    margin: 0;
+    top: 50px;
+  }
+  .head1-fondoGris {
+    display: block;
+    position: relative;
+    background-color: var(--cielo);
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    top: 0;
+  }
+
+  .head1-title {
+    left: 8%;
+    top: 30px;
+  }
+
+  .head1-image {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+  }
+  .head1-image img {
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 500px;
+    left: 15%;
+  }
+  .body1,
+  .body2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    width: 80%;
+    margin: 120px 10%;
+    margin-bottom: 20px;
+  }
+
+  .articulo {
+    width: 40%;
+    margin: 0;
+  }
+
+  .articulo.uno {
+    margin: 0;
+    margin-bottom: 90px;
+  }
+  .articulo.dos {
+    margin: 0;
+    margin-top: 90px;
+  }
+
+  .head1.head2 {
+    margin-bottom: 0;
+  }
+
+  .head2 {
+    position: relative;
+    min-height: 540px;
+  }
+
+  .head2-fondoGris {
+    top: 0;
+    width: 74%;
+    left: 0;
+    height: 500px;
+  }
+  .fondogris-txt {
+    display: none;
+    width: calc(100vw - 794px);
+    height: 500px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: 966px) {
+    .fondogris-txt {
+      display: block;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .head2-image {
+    z-index: 250;
+    right: 0;
+    top: 20px;
+    height: 500px;
+  }
+  .head2-image img {
+    left: auto;
+    right: 0;
+  }
+
+  .articulo.tres {
+    margin: 0;
+    margin-top: 90px;
+  }
+  .articulo.cuatro {
+    margin: 0;
+    margin-bottom: 90px;
+  }
+
+  .body2 {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1080px) {
+    .head1-title h1 {
+      font-size: 30px;
+    }
+    .head1-title span {
+      line-height: 38px;
+    }
+    .head1-image {
+      height: 600px;
+    }
+    .head1-fondoGris {
+      height: 600px;
+    }
+    .head1-image img {
+      height: 600px;
+      left: 10%;
+    }
+    .head2-image {
+      height: 500px;
+    }
+    .head2-image img {
+      height: 500px;
+      left: auto;
+      right: 0;
+    }
+
+    .head1-articulito {
+      display: block;
+      position: absolute;
+      width: 20%;
+      margin: 30px;
+      top: 210px;
+      left: calc(18% + 509px);
+      z-index: 300;
+    }
+
+    .articulito-asterisco {
+      font-size: 80px;
+      margin: 0;
+      color: var(--naranja);
+      font-family: "HelveBlk";
+      line-height: 40px;
+    }
+
+    .articulito-txt {
+      font-family: "Frank Ruhl Libre", serif;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .fondogris-txt {
+      display: block;
+      font-size: 44px;
+      line-height: 44px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .body1 {
+      column-gap: 80px;
+    }
+    .head1-title h1 {
+      font-size: 34px;
+    }
+    .head1-title span {
+      line-height: 44px;
+    }
+    .head1-image img {
+      left: 15%;
+    }
+    .head2-image {
+      height: 500px;
+    }
+    .head2-image img {
+      left: auto;
+      right: 0;
+    }
+
+    .head1-articulito {
+      margin: 40px;
+      left: calc(22% + 509px);
+    }
+
+    .fondogris-txt {
+      display: block;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+  @media (min-width: 1360px) {
+    .body1 {
+      column-gap: 100px;
+    }
+    .head1-image img {
+      left: 13%;
+    }
+    .head2-image {
+      height: 500px;
+    }
+    .head2-image img {
+      left: auto;
+      right: 0;
+    }
+    .head1-articulito {
+      margin: 50px;
+      left: calc(20% + 516px);
+    }
+    .fondogris-txt {
+      display: block;
+      font-size: 58px;
+      line-height: 58px;
+    }
+  }
+  @media (min-width: 1600px) {
+    .body1 {
+      column-gap: 100px;
+    }
+    .head1-title h1 {
+      font-size: 40px;
+    }
+    .head1-title span {
+      line-height: 52px;
+    }
+    .head1-image {
+      height: 700px;
+    }
+    .head1-fondoGris {
+      height: 700px;
+    }
+    .head1-image img {
+      height: 700px;
+      left: 12%;
+    }
+    .head2-image {
+      height: 500px;
+    }
+    .head2-image img {
+      left: auto;
+      right: 0;
+      height: 500px;
+    }
+    .head1-articulito {
+      top: 270px;
+      margin: 80px;
+      left: calc(20% + 587px);
+    }
+  }
+}

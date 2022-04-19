@@ -1,0 +1,154 @@
+.head7 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.head7 img {
+  width: 145%;
+  margin-left: -90px;
+  margin-top: -20px;
+}
+
+.head7-title {
+  position: relative;
+  left: calc(50% - 130px);
+  width: 260px;
+}
+.head7-title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--tiza);
+  font-family: "HelveBlk";
+}
+.head7-title span {
+  margin: 0;
+  background-color: var(--negris);
+}
+.head7-title h3 {
+  font-family: "HelveThEx";
+  color: var(--tiza);
+  font-size: 26px;
+  margin: 0;
+  margin-left: 11px;
+}
+.manifiesto-txt {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.manifiesto-txt p {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+  margin: 20px 20px;
+}
+
+#head7-cita {
+  font-family: "HelveBlk";
+  color: var(--cielo);
+  font-size: 24px;
+}
+
+.citaNaranja1,
+.citaNaranja2 {
+  display: none;
+}
+@media (min-width: 600px) {
+  .head7 img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .head7-title {
+    left: 13%;
+  }
+
+  .head7-title span {
+    background-color: var(--naranja);
+    padding: 0 15px;
+    font-size: var(--font600);
+  }
+
+  .manifiesto-txt {
+    position: relative;
+    margin: 80px 0px;
+    width: 70%;
+    left: 15%;
+  }
+
+  .manifiesto-txt p {
+    line-height: 20px;
+  }
+
+  .citaNaranja1,
+  .citaNaranja2 {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    display: block;
+  }
+
+  .citaNaranja1 p,
+  .citaNaranja2 p {
+    font-size: 10px;
+    color: var(--naranja);
+    line-height: 10px;
+    margin: 0;
+  }
+
+  .citaNaranja1 {
+    top: 18%;
+    right: -190px;
+  }
+
+  .citaNaranja2 {
+    top: 70%;
+    right: -190px;
+  }
+}
+
+@media (min-width: 966px) {
+  .head7-title span {
+    font-size: var(--font1080);
+  }
+  .manifiesto-txt p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .citaNaranja1 p,
+  .citaNaranja2 p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media (min-width: 1080px) {
+  .head7-title span {
+    font-size: var(--font1080);
+  }
+  .manifiesto-txt p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .citaNaranja1 p,
+  .citaNaranja2 p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  .head7-title span {
+    font-size: var(--font1280);
+  }
+  .manifiesto-txt {
+    width: 60%;
+    left: 20%;
+  }
+}
+@media (min-width: 1360px) {
+  .head7-title span {
+    font-size: var(--font1600);
+  }
+}

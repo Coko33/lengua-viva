@@ -1,0 +1,350 @@
+/*Encabezado*/
+.head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.titulo {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 0;
+  z-index: 50;
+}
+.titulo h1 {
+  font-family: "HelveBlkEx";
+  font-size: var(--font600);
+  color: var(--tiza);
+  margin: 0;
+  text-align: center;
+}
+.titulo span {
+  background-color: var(--negris);
+  margin: 0;
+  top: 0;
+}
+
+.container-img-titu {
+  position: relative;
+  top: 15px;
+}
+.container-img-titu img {
+  position: relative;
+  width: 100%;
+}
+.text-foto {
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  background: linear-gradient(transparent, black);
+}
+.titulo2 {
+  color: var(--tiza);
+  font-family: "HelveThEx";
+  letter-spacing: 1pt;
+  margin: 0;
+  line-height: var(--font600);
+  margin-bottom: 8px;
+}
+.bajada {
+  color: var(--naranja);
+  font-family: "HelveBlk";
+  margin: 0;
+  font-size: 12px;
+}
+
+.fondoGris {
+  background-color: var(--cielo);
+  padding: 20px 20px;
+}
+.text-foto.desk {
+  display: none;
+}
+.descripcion-tno {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+}
+.cta-talleres {
+  position: relative;
+  display: block;
+  left: calc(50% - 60px);
+  background-color: var(--naranja);
+  -webkit-box-shadow: 5px 6px 7px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 6px 7px -2px rgba(0, 0, 0, 0.68);
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 25px;
+  font-family: "HelveBlk";
+  color: var(--tiza);
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.bordeBlanco {
+  display: none;
+}
+
+/*Articulos*/
+.articulo {
+  margin: 20px;
+  border: 1px solid var(--negris);
+  padding: 30px;
+  width: auto;
+  height: auto;
+}
+
+.articulo-title h3 {
+  font-family: "HelveBlk";
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--negris);
+  margin: 0;
+}
+
+.articulo-body {
+  position: relative;
+  margin-top: 20px;
+}
+
+.articulo-txt {
+  display: inline;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+}
+
+.cta-talleres.tc {
+  position: absolute;
+  bottom: 20px;
+  top: 130px;
+}
+
+.tallercorto {
+  height: 230px;
+}
+
+.body1.tno {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 600px) {
+  .bordeBlanco {
+    display: block;
+    position: absolute;
+    background-color: var(--tiza);
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 200;
+  }
+  /*Encabezado*/
+  .head {
+    position: relative;
+    margin-bottom: 0px;
+    display: block;
+    width: 80%;
+    left: 10%;
+    top: 20px;
+  }
+  .titulo {
+    left: 0;
+    top: -10px;
+  }
+  .titulo h1 {
+    font-size: var(--font600);
+  }
+  .titulo span {
+  }
+  .fondoGris {
+    position: absolute;
+    top: 15px;
+    height: calc(100% - 45px);
+    padding: 20px 20px;
+    left: 50%;
+  }
+  .container.img.titu {
+  }
+  .container-img-titu img {
+    width: 50%;
+  }
+  .text-foto.mob {
+    display: none;
+  }
+  .text-foto img {
+  }
+  .text-foto {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    height: 20%;
+    background: none;
+  }
+  .titulo2 {
+    font-family: "HelveBlk";
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: var(--negris);
+  }
+  .bajada {
+    font-size: 14px;
+  }
+  .text-foto.desk {
+    display: block;
+  }
+
+  .descripcion-tno {
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .cta-talleres {
+    left: calc(50% - 65px);
+    margin: 0;
+  }
+
+  .cta-talleres.tno {
+  }
+
+  /*Articulos*/
+  .articulo {
+    padding: 40px 30px;
+  }
+
+  .articulo-title h3 {
+  }
+
+  .articulo-body {
+  }
+
+  .articulo-txt {
+    font-size: 20px;
+  }
+
+  @media (min-width: 966px) {
+    .fondoGris {
+      padding: 40px 40px 0 40px;
+    }
+    .titulo2 {
+      font-size: var(--font1080);
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+    .cta-talleres {
+      font-size: 18px;
+      height: 30px;
+      width: 150px;
+      left: calc(50% - 75px);
+    }
+    .bajada {
+    }
+    .cta-talleres.tno {
+      top: 0;
+    }
+
+    .descripcion-tno {
+      font-size: 16px;
+      height: 150px;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .titulo h1 {
+      font-size: var(--font1080);
+    }
+    .titulo2 {
+      font-size: var(--font1080);
+      margin-bottom: 16px;
+    }
+    .text-foto {
+    }
+    .titulo2 {
+    }
+    .bajada {
+    }
+    .cta-talleres.tno {
+    }
+
+    .descripcion-tno {
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .titulo h1 {
+      font-size: var(--font1280);
+    }
+    .titulo2 {
+      font-size: var(--font1280);
+      line-height: 32px;
+    }
+    .bajada {
+      font-size: 18px;
+    }
+    .cta-talleres {
+      width: 180px;
+      height: 35px;
+      font-size: 20px;
+      left: calc(50% - 90px);
+    }
+
+    .text-foto {
+    }
+    .titulo2 {
+    }
+
+    .descripcion-tno {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 1360px) {
+    .titulo h1 {
+      font-size: var(--font1600);
+    }
+    .titulo2 {
+      font-size: var(--font1600);
+      margin-bottom: 20px;
+    }
+    .bajada {
+      font-size: 20px;
+    }
+    .cta-talleres.tno {
+    }
+    .text-foto {
+    }
+    .titulo2 {
+    }
+    .bajada {
+    }
+
+    .descripcion-tno {
+    }
+  }
+  @media (min-width: 1600px) {
+    .titulo h1 {
+      font-size: var(--font1800);
+    }
+    .cta-talleres.tno {
+    }
+    .text-foto {
+    }
+    .titulo2 {
+    }
+    .bajada {
+    }
+
+    .descripcion-tno {
+    }
+
+    .articulo {
+      padding: 60px 60px;
+    }
+  }
+}

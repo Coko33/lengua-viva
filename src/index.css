@@ -1,3 +1,73 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@font-face {
+  font-family: "HelveBlk";
+  font-weight: "black";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-Blk.woff) format("woff");
+}
+@font-face {
+  font-family: "HelveBlkEx";
+  font-style: "black extended";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-BlkEx.woff) format("woff");
+}
+@font-face {
+  font-family: "HelveLt";
+  font-style: "light";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-Lt.woff) format("woff");
+}
+@font-face {
+  font-family: "HelveLtEx";
+  font-style: "light extended";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-LtEx.woff) format("woff");
+}
+@font-face {
+  font-family: "HelveThEx";
+  font-style: "light Thin Extended";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-ThEx_1.woff) format("woff");
+}
+@font-face {
+  font-family: "HelveRoman";
+  font-weight: "roman";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/HelveticaNeueLTStd-Roman.woff) format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&display=swap");
+
+/* font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Rubik', sans-serif; */
+
+:root {
+  --cielo: #c1d1cf;
+  --naranja: #e74006;
+  --tiza: #fbfaf8;
+  --negris: #2a2a2a;
+  --grisfooter: #2a2a2a;
+
+  --font600: 28px;
+  --font1080: 30px;
+  --font1280: 34px;
+  --font1600: 40px;
+  --font1800: 46px;
+}
+
+html {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--tiza);
+}
+
+.noScroll {
+  overflow: hidden;
+}

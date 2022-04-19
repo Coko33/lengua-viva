@@ -1,38 +1,380 @@
-.App {
+/*Nav*/
+.nav {
+  position: relative;
+  z-index: 300;
+  height: 60px;
+  width: 100%;
+  background-color: var(--tiza);
+}
+
+.nav-title {
+  position: absolute;
+  display: inline;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: auto;
+}
+
+.nav-title a {
+  text-decoration: none;
+}
+
+.nav-title h3 {
+  margin: 0 20px;
+  font-family: "HelveBlk";
+  font-size: 16px;
+  color: var(--negris);
+  line-height: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-burger {
+  position: absolute;
+  display: inline;
+  background-color: transparent;
+  border: none;
+  top: 0;
+  left: auto;
+  right: 0;
+  padding: 20px;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-burger:hover {
+  cursor: pointer;
+}
+
+.nav-burger img {
+  height: 20px;
+}
+
+/*Menu  z-index 300*/
+.menuBlur {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+}
+
+.menuBlur.isOpen {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  background-color: var(--tiza);
+  height: 80%;
+}
+
+.menu-list {
+  position: absolute;
+  top: 20%;
+  width: 260px;
+  margin-left: calc(50% - 130px);
+}
+
+.menu-cerrar {
+  position: absolute;
+  display: inline;
+  top: 0;
+  left: auto;
+  right: 0;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-cerrar:hover {
+  cursor: pointer;
+}
+
+.menu-cerrar img {
+  height: 20px;
+}
+
+.flech {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+}
+
+.flech img {
+  display: none;
+  margin-top: 2px;
+}
+.flech img.isActive {
+  display: block;
+}
+
+.menu-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-ul a {
+  text-decoration: none;
+}
+
+.menu-ul li {
+  line-height: 16px;
+  vertical-align: middle;
+  margin-bottom: 25px;
+  font-family: "HelveBlk";
+  font-size: 16px;
+  color: var(--negris);
+}
+
+.menu-ul li:hover {
+  cursor: pointer;
+}
+
+.menu-ul li.isActive {
+  color: var(--tiza);
+}
+
+span {
+  margin-left: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+.isActive span {
+  background-color: var(--negris);
+}
+
+/*Inicio*/
+.ov-hidden {
+  overflow: hidden;
+}
+
+.inicio {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+}
+
+.inicio-title {
+  width: 100%;
+}
+
+.inicio-title h1 {
+  text-align: center;
+  font-family: "HelveBlkEx";
+}
+
+.inicio-img {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.inicio-img img {
+  position: absolute;
+  bottom: 0;
+  margin-left: -15vw;
+  width: 130vw;
+}
+
+@media (min-width: 445px) {
+  .inicio-img img {
+    width: 100vw;
+    margin-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cta {
+  position: absolute;
+  width: 230px;
+  left: calc(50vw - 115px);
+  bottom: 70px;
+  top: auto;
+  height: 40px;
+}
+
+.cta a {
+  text-decoration: none;
+}
+
+.cta-boton {
+  display: flex;
+  border: none;
+  background-color: var(--naranja);
+  border-radius: 18px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 10px 12px 7px -2px rgba(0, 0, 0, 0.68);
+  box-shadow: 10px 12px 7px -2px rgba(0, 0, 0, 0.68);
+}
+
+.cta-boton:hover {
+  cursor: pointer;
+}
+
+.cta-boton p {
+  margin: 0;
+  margin-left: 13px;
+  display: inline-block;
+  line-height: 40px;
+  vertical-align: middle;
+  color: var(--tiza);
+  font-family: "HelveBlk";
+}
+
+.buttonIco {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 34px;
+  height: 34px;
+  background-color: #000;
+  border-radius: 17px;
+}
+
+.buttonIco img {
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  top: 4px;
+  right: 5px;
+}
+
+/*Footer*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: var(--negris);
+}
+
+.footerContainer {
+  position: relative;
+  top: 0;
+  width: 260px;
+  left: calc(50% - 130px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.iconos {
+  position: relative;
+  left: calc(50% - 55px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 110px;
+  height: 20px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.iconos img {
+  height: 20px;
+}
+
+.footerContainer p {
+  font-family: "HelveThEx";
+  color: var(--tiza);
+  margin: 0;
+  text-align: center;
+}
+
+/*Admin*/
+.admin {
+  position: relative;
+}
+
+/*seccion*/
+.seccion {
+  position: relative;
+  height: fit-content;
+  min-height: calc(100vh - 140px);
+  width: 100%;
+  z-index: 200;
+}
+
+.winsize {
+  position: fixed;
+  z-index: 500;
+  background-color: cornflowerblue;
+  padding: 10px;
+  width: 130px;
+  left: calc(50% - 75px);
+}
+.winsize h6 {
+  margin: 0;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 410px) {
+  .menu {
+    position: absolute;
+    width: 100%;
+    background-color: var(--tiza);
+    height: 70%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-list {
+    width: 340px;
+    margin-left: calc(50% - 170px);
+  }
+  .menu-ul li {
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+
+  .flech {
+    width: 16px;
+    height: 16px;
+  }
+
+  .flech img {
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: 600px) {
+  /*Inicio*/
+  .inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .inicio-img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .inicio-img img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100%;
+  }
+  .buttonIco img {
+    position: absolute;
+    height: 25px;
+    top: 5px;
+    left: 11px;
+  }
+  .cta {
+  }
+
+  /*Menu*/
+  .menu {
+    width: 50%;
+    left: 50%;
+    height: 100%;
   }
 }

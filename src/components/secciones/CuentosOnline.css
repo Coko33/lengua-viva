@@ -1,0 +1,122 @@
+.head4 {
+  width: 100%;
+  height: auto;
+}
+
+.head4-title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -15px;
+}
+
+.wrapper {
+  position: relative;
+  top: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.grid {
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.grid img {
+  width: 100%;
+}
+.grid1 img {
+  position: relative;
+  width: 110%;
+  left: -30px;
+}
+.grid1 {
+  height: auto;
+  min-height: 500px;
+}
+
+.cuento-online {
+  position: relative;
+  width: calc(100% - 40px);
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  box-shadow: 6px 6px 12px #a6a5a4, -6px -6px 12px #ffffff;
+}
+
+.cuento-online img {
+  position: relative;
+  height: 100%;
+}
+.cuentoOnline_descripcion {
+  position: relative;
+  padding: 10px 20px 20px 20px;
+}
+
+.botonPlay {
+  position: absolute;
+  background-color: var(--negris);
+  top: -50px;
+  left: 20px;
+  width: 90px;
+  height: 60px;
+  z-index: 200;
+}
+.botonPlay img {
+  width: 24px;
+  left: 36px;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+  .head4-title {
+    top: 50px;
+    width: auto;
+    left: -50px;
+  }
+  .head4-title h1 {
+    font-size: 46px;
+  }
+
+  .grid {
+    min-height: 400px;
+    min-width: 311px;
+    height: 100%;
+  }
+
+  .grid1 img {
+    position: relative;
+    height: 100%;
+  }
+
+  .grid1 {
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+  }
+
+  .grid2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .grid3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .grid4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
